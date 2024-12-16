@@ -1,9 +1,6 @@
 import 'package:bmi_calc/config/routes/route_constants.dart';
-import 'package:bmi_calc/presentation/cubits/bmi_cubit.dart';
-import 'package:bmi_calc/presentation/screens/home_page/home_page.dart';
-import 'package:bmi_calc/presentation/screens/info_page/info_page.dart';
+import 'package:bmi_calc/presentation/home_page/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class RouteGenerator {
   RouteGenerator._();
@@ -12,15 +9,7 @@ class RouteGenerator {
     switch (settings.name) {
       case Routes.homeScreenRoute:
         return MaterialPageRoute(
-          builder: (context) => BlocProvider(
-            create: (context) => BMICubit(),
-            child: const HomePage(),
-          ),
-        );
-
-      case Routes.infoScreenRoute:
-        return MaterialPageRoute(
-          builder: (context) => const InfoPage(),
+          builder: (context) => const HomePage(),
         );
 
       default:

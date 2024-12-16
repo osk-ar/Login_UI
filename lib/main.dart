@@ -13,14 +13,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-        designSize: const Size(390, 844),
-        minTextAdapt: true,
-        splitScreenMode: true,
-        builder: (context, child) => const MaterialApp(
-              debugShowCheckedModeBanner: false,
-              title: 'BMI_Calc',
-              onGenerateRoute: RouteGenerator.getRoute,
-              initialRoute: Routes.homeScreenRoute,
-            ));
+      designSize: const Size(390, 844),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) => const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Login_UI',
+        onGenerateRoute: RouteGenerator.getRoute,
+        initialRoute: Routes.homeScreenRoute,
+      ),
+    );
   }
 }
