@@ -1,10 +1,10 @@
-import 'package:bmi_calc/presentation/common/custom_button.dart';
-import 'package:bmi_calc/presentation/common/custom_text_field.dart';
-import 'package:bmi_calc/presentation/common/header.dart';
+import 'package:bmi_calc/presentation/login_ui/widgets/custom_button.dart';
+import 'package:bmi_calc/presentation/login_ui/widgets/custom_text_field.dart';
+import 'package:bmi_calc/presentation/login_ui/widgets/header.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,5 @@
 class Routes {
   Routes._();
-  static const String homeScreenRoute = "/";
+  static const String loginScreenRoute = "/";
+  static const String calcScreenRoute = "/calc";
 }
